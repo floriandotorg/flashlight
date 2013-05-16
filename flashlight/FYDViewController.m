@@ -8,16 +8,29 @@
 
 #import "FYDViewController.h"
 
+#import <AVFoundation/AVFoundation.h>
+
 @interface FYDViewController ()
 
 @end
 
 @implementation FYDViewController
 
-- (void)viewDidLoad
+- (void) flashOn
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    
+    if ([device hasTorch] && [device hasFlash])
+    {
+        [device lockForConfiguration:nil];    
+        [device setTorchMode:AVCaptureTorchModeOn];
+        [device unlockForConfiguration];
+    }
+}
+
+-(void)applicationDidBecomeActive
+{
+    [self flashOn];
 }
 
 - (void)didReceiveMemoryWarning

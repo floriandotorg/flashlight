@@ -18,6 +18,7 @@
 		174360E8174448B8003E6ED9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 174360E7174448B8003E6ED9 /* Default-568h@2x.png */; };
 		174360EB174448B8003E6ED9 /* FYDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 174360EA174448B8003E6ED9 /* FYDViewController.m */; };
 		174360EE174448B8003E6ED9 /* FYDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 174360EC174448B8003E6ED9 /* FYDViewController.xib */; };
+		1771AB071745061B00F5ACAC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1771AB061745061B00F5ACAC /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		174360E9174448B8003E6ED9 /* FYDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYDViewController.h; sourceTree = "<group>"; };
 		174360EA174448B8003E6ED9 /* FYDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYDViewController.m; sourceTree = "<group>"; };
 		174360ED174448B8003E6ED9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FYDViewController.xib; sourceTree = "<group>"; };
+		1771AB061745061B00F5ACAC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1771AB071745061B00F5ACAC /* AVFoundation.framework in Frameworks */,
 				174360D2174448B7003E6ED9 /* UIKit.framework in Frameworks */,
 				174360D4174448B7003E6ED9 /* Foundation.framework in Frameworks */,
 				174360D6174448B7003E6ED9 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +59,7 @@
 		174360C5174448B7003E6ED9 = {
 			isa = PBXGroup;
 			children = (
+				1771AB061745061B00F5ACAC /* AVFoundation.framework */,
 				174360D7174448B7003E6ED9 /* flashlight */,
 				174360D0174448B7003E6ED9 /* Frameworks */,
 				174360CF174448B7003E6ED9 /* Products */,
@@ -228,7 +232,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -255,7 +259,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
