@@ -12,13 +12,15 @@
 		174360D6174448B7003E6ED9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 174360D5174448B7003E6ED9 /* CoreGraphics.framework */; };
 		174360DC174448B7003E6ED9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 174360DA174448B7003E6ED9 /* InfoPlist.strings */; };
 		174360DE174448B7003E6ED9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 174360DD174448B7003E6ED9 /* main.m */; };
-		174360E2174448B7003E6ED9 /* FYDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 174360E1174448B7003E6ED9 /* FYDAppDelegate.m */; };
 		174360E4174448B8003E6ED9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 174360E3174448B8003E6ED9 /* Default.png */; };
 		174360E6174448B8003E6ED9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 174360E5174448B8003E6ED9 /* Default@2x.png */; };
 		174360E8174448B8003E6ED9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 174360E7174448B8003E6ED9 /* Default-568h@2x.png */; };
-		174360EB174448B8003E6ED9 /* FYDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 174360EA174448B8003E6ED9 /* FYDViewController.m */; };
-		174360EE174448B8003E6ED9 /* FYDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 174360EC174448B8003E6ED9 /* FYDViewController.xib */; };
 		1771AB071745061B00F5ACAC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1771AB061745061B00F5ACAC /* AVFoundation.framework */; };
+		1777013C174E48F3006F1DE8 /* FYDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17770137174E48F3006F1DE8 /* FYDAppDelegate.m */; };
+		1777013D174E48F3006F1DE8 /* FYDFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17770139174E48F3006F1DE8 /* FYDFlipsideViewController.m */; };
+		1777013E174E48F3006F1DE8 /* FYDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777013B174E48F3006F1DE8 /* FYDMainViewController.m */; };
+		17770146174E48FC006F1DE8 /* FYDFlipsideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17770140174E48FC006F1DE8 /* FYDFlipsideViewController.xib */; };
+		17770147174E48FC006F1DE8 /* FYDMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17770142174E48FC006F1DE8 /* FYDMainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,15 +32,18 @@
 		174360DB174448B7003E6ED9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		174360DD174448B7003E6ED9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		174360DF174448B7003E6ED9 /* flashlight-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "flashlight-Prefix.pch"; sourceTree = "<group>"; };
-		174360E0174448B7003E6ED9 /* FYDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYDAppDelegate.h; sourceTree = "<group>"; };
-		174360E1174448B7003E6ED9 /* FYDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYDAppDelegate.m; sourceTree = "<group>"; };
 		174360E3174448B8003E6ED9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		174360E5174448B8003E6ED9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		174360E7174448B8003E6ED9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		174360E9174448B8003E6ED9 /* FYDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYDViewController.h; sourceTree = "<group>"; };
-		174360EA174448B8003E6ED9 /* FYDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYDViewController.m; sourceTree = "<group>"; };
-		174360ED174448B8003E6ED9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FYDViewController.xib; sourceTree = "<group>"; };
 		1771AB061745061B00F5ACAC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		17770136174E48F3006F1DE8 /* FYDAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYDAppDelegate.h; sourceTree = "<group>"; };
+		17770137174E48F3006F1DE8 /* FYDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYDAppDelegate.m; sourceTree = "<group>"; };
+		17770138174E48F3006F1DE8 /* FYDFlipsideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYDFlipsideViewController.h; sourceTree = "<group>"; };
+		17770139174E48F3006F1DE8 /* FYDFlipsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYDFlipsideViewController.m; sourceTree = "<group>"; };
+		1777013A174E48F3006F1DE8 /* FYDMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYDMainViewController.h; sourceTree = "<group>"; };
+		1777013B174E48F3006F1DE8 /* FYDMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYDMainViewController.m; sourceTree = "<group>"; };
+		17770141174E48FC006F1DE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = FYDFlipsideViewController.xib; sourceTree = "<group>"; };
+		17770143174E48FC006F1DE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = FYDMainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,11 +92,14 @@
 		174360D7174448B7003E6ED9 /* flashlight */ = {
 			isa = PBXGroup;
 			children = (
-				174360E0174448B7003E6ED9 /* FYDAppDelegate.h */,
-				174360E1174448B7003E6ED9 /* FYDAppDelegate.m */,
-				174360E9174448B8003E6ED9 /* FYDViewController.h */,
-				174360EA174448B8003E6ED9 /* FYDViewController.m */,
-				174360EC174448B8003E6ED9 /* FYDViewController.xib */,
+				17770140174E48FC006F1DE8 /* FYDFlipsideViewController.xib */,
+				17770142174E48FC006F1DE8 /* FYDMainViewController.xib */,
+				17770136174E48F3006F1DE8 /* FYDAppDelegate.h */,
+				17770137174E48F3006F1DE8 /* FYDAppDelegate.m */,
+				17770138174E48F3006F1DE8 /* FYDFlipsideViewController.h */,
+				17770139174E48F3006F1DE8 /* FYDFlipsideViewController.m */,
+				1777013A174E48F3006F1DE8 /* FYDMainViewController.h */,
+				1777013B174E48F3006F1DE8 /* FYDMainViewController.m */,
 				174360D8174448B7003E6ED9 /* Supporting Files */,
 			);
 			path = flashlight;
@@ -167,7 +175,8 @@
 				174360E4174448B8003E6ED9 /* Default.png in Resources */,
 				174360E6174448B8003E6ED9 /* Default@2x.png in Resources */,
 				174360E8174448B8003E6ED9 /* Default-568h@2x.png in Resources */,
-				174360EE174448B8003E6ED9 /* FYDViewController.xib in Resources */,
+				17770146174E48FC006F1DE8 /* FYDFlipsideViewController.xib in Resources */,
+				17770147174E48FC006F1DE8 /* FYDMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,8 +188,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				174360DE174448B7003E6ED9 /* main.m in Sources */,
-				174360E2174448B7003E6ED9 /* FYDAppDelegate.m in Sources */,
-				174360EB174448B8003E6ED9 /* FYDViewController.m in Sources */,
+				1777013C174E48F3006F1DE8 /* FYDAppDelegate.m in Sources */,
+				1777013D174E48F3006F1DE8 /* FYDFlipsideViewController.m in Sources */,
+				1777013E174E48F3006F1DE8 /* FYDMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,12 +205,22 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		174360EC174448B8003E6ED9 /* FYDViewController.xib */ = {
+		17770140174E48FC006F1DE8 /* FYDFlipsideViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				174360ED174448B8003E6ED9 /* en */,
+				17770141174E48FC006F1DE8 /* en */,
 			);
-			name = FYDViewController.xib;
+			name = FYDFlipsideViewController.xib;
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		17770142174E48FC006F1DE8 /* FYDMainViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17770143174E48FC006F1DE8 /* en */,
+			);
+			name = FYDMainViewController.xib;
+			path = en.lproj;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -274,6 +294,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "flashlight/flashlight-Prefix.pch";
 				INFOPLIST_FILE = "flashlight/flashlight-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -287,6 +308,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "flashlight/flashlight-Prefix.pch";
 				INFOPLIST_FILE = "flashlight/flashlight-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";

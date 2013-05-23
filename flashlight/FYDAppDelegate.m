@@ -1,14 +1,16 @@
 //
 //  FYDAppDelegate.m
-//  flashlight
+//  flash
 //
-//  Created by Florian on 16.05.13.
-//  Copyright (c) 2013 Floyd UG (haftungsbeschränkt). All rights reserved.
+//  Created by Florian Kaiser on 23.05.13.
+//  Copyright (c) 2013 Florian Kaiser. All rights reserved.
 //
 
 #import "FYDAppDelegate.h"
 
-#import "FYDViewController.h"
+#import "FYDMainViewController.h"
+
+#import <AVFoundation/AVFoundation.h>
 
 @implementation FYDAppDelegate
 
@@ -16,8 +18,8 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[FYDViewController alloc] initWithNibName:@"FYDViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+    self.mainViewController = [[FYDMainViewController alloc] initWithNibName:@"FYDMainViewController" bundle:nil];
+    self.window.rootViewController = self.mainViewController;
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -30,15 +32,25 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
+    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-    [self.viewController applicationDidBecomeActive];
+    AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    
+    if ([device hasTorch] && [device hasFlash])
+    {
+        [device lockForConfiguration:nil];
+        [device setTorchMode:AVCaptureTorchModeOn];
+        [device unlockForConfiguration];
+    }
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
