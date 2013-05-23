@@ -10,8 +10,6 @@
 
 @interface FYDFlipsideViewController ()
 
-@property (strong) UITapGestureRecognizer *gestureRecognizer;
-
 @end
 
 @implementation FYDFlipsideViewController
@@ -19,24 +17,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
-    self.gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap)];
-    self.gestureRecognizer.numberOfTapsRequired = 2;
-    
-    [self.view addGestureRecognizer:self.gestureRecognizer];
 }
 
 #pragma mark - Actions
-                            
--(void)handleTap
-{
-    [self.delegate flipsideViewControllerDidFinish:self];
-}
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)handleTap:(UITapGestureRecognizer *)sender
+{
+    [self.delegate flipsideViewControllerDidFinish:self];
 }
 
 @end

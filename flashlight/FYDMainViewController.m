@@ -10,8 +10,6 @@
 
 @interface FYDMainViewController ()
 
-@property (strong) UITapGestureRecognizer *gestureRecognizer;
-
 @end
 
 @implementation FYDMainViewController
@@ -19,11 +17,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-	self.gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap)];
-    self.gestureRecognizer.numberOfTapsRequired = 2;
-
-    [self.view addGestureRecognizer:self.gestureRecognizer];
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,17 +27,17 @@
 
 #pragma mark - Flipside View
 
--(void)handleTap
+- (void)flipsideViewControllerDidFinish:(FYDFlipsideViewController *)controller
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)handleTap:(UITapGestureRecognizer *)sender
 {
     FYDFlipsideViewController *controller = [[FYDFlipsideViewController alloc] initWithNibName:@"FYDFlipsideViewController" bundle:nil];
     controller.delegate = self;
     controller.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     [self presentViewController:controller animated:YES completion:nil];
-}
-
-- (void)flipsideViewControllerDidFinish:(FYDFlipsideViewController *)controller
-{
-    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
